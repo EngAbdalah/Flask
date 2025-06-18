@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>companies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>companies</h1>
+    <p>Welcome to the companies page.</p>
+    <table>
+        <tr>
+            <th>companies ID</th>
+            <th>companies Name</th>
+            <th>Company Location</th>
+            <th>industry</th>
+            <th>employees_count</th>
+            
+            
+        </tr>
+
+        <tr>
+            <td>{{ company.id }}</td>
+            <td>{{ company.name }}</td>
+            <td>{{ company.location }}</td>
+            <td>{{ company.industry }}</td>
+            <td>{{ company.employees_count }}</td>
+           
+            
+        </tr>
+
+    </table>
+
+</body>
+</html>
